@@ -1,0 +1,24 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="Na_to_K <= 14.627\ngini = 0.693\nsamples = 140\nvalue = [62, 16, 13, 8, 41]"] ;
+1 [label="BP_Encoded <= 0.5\ngini = 0.643\nsamples = 78\nvalue = [0, 16, 13, 8, 41]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Age <= 52.0\ngini = 0.495\nsamples = 29\nvalue = [0, 16, 13, 0, 0]"] ;
+1 -> 2 ;
+3 [label="gini = 0.0\nsamples = 16\nvalue = [0, 16, 0, 0, 0]"] ;
+2 -> 3 ;
+4 [label="gini = 0.0\nsamples = 13\nvalue = [0, 0, 13, 0, 0]"] ;
+2 -> 4 ;
+5 [label="BP_Encoded <= 1.5\ngini = 0.273\nsamples = 49\nvalue = [0, 0, 0, 8, 41]"] ;
+1 -> 5 ;
+6 [label="Cholesterol_Encoded <= 0.5\ngini = 0.472\nsamples = 21\nvalue = [0, 0, 0, 8, 13]"] ;
+5 -> 6 ;
+7 [label="gini = 0.0\nsamples = 8\nvalue = [0, 0, 0, 8, 0]"] ;
+6 -> 7 ;
+8 [label="gini = 0.0\nsamples = 13\nvalue = [0, 0, 0, 0, 13]"] ;
+6 -> 8 ;
+9 [label="gini = 0.0\nsamples = 28\nvalue = [0, 0, 0, 0, 28]"] ;
+5 -> 9 ;
+10 [label="gini = 0.0\nsamples = 62\nvalue = [62, 0, 0, 0, 0]"] ;
+0 -> 10 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
